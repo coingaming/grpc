@@ -4,7 +4,7 @@ defmodule GRPC.Mixfile do
   def project do
     [
       app: :grpc,
-      version: "0.6.3",
+      version: version(),
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env()),
       build_embedded: Mix.env() == :prod,
@@ -32,9 +32,16 @@ defmodule GRPC.Mixfile do
     [extra_applications: [:logger]]
   end
 
+  defp version do
+    case File.read("VERSION") do
+      {:ok, v} -> String.trim(v)
+      {:error, _} -> "0.0.0-development"
+    end
+  end
+
   defp deps do
     [
-      {:protobuf, "~> 0.5"},
+      {:protobuf, "~> 0.5", organization: "coingaming"},
       {:cowboy, "~> 2.7"},
       {:gun, "~> 2.0.0", hex: :grpc_gun},
       # 2.9.0 fixes some important bugs, so it's better to use ~> 2.9.0
@@ -50,9 +57,10 @@ defmodule GRPC.Mixfile do
   defp package do
     %{
       name: :grpc_fresha,
+      organization: "coingaming",
       licenses: ["Apache 2"],
       links: %{"GitHub" => "https://github.com/surgeventures/grpc"},
-      files: ~w(mix.exs README.md lib src config LICENSE .formatter.exs)
+      files: ~w(mix.exs README.md lib src config LICENSE .formatter.exs VERSION)
     }
   end
 
