@@ -56,7 +56,7 @@ defmodule GRPC.Mixfile do
 
   defp package do
     %{
-      name: :grpc_fresha,
+      name: :grpc,
       organization: "coingaming",
       licenses: ["Apache 2"],
       links: %{"GitHub" => "https://github.com/surgeventures/grpc"},
