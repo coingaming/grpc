@@ -1,3 +1,10 @@
+## [0.5.6](https://github.com/coingaming/grpc/compare/v0.5.5...v0.5.6) (2022-03-06)
+
+
+### Bug Fixes
+
+* protobuf upgrade ([fc264d0](https://github.com/coingaming/grpc/commit/fc264d06b9281296fdc279bccc6bcda5cf362854))
+
 ## [0.5.5](https://github.com/coingaming/grpc/compare/v0.5.4...v0.5.5) (2022-03-06)
 
 
