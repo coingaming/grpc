@@ -1,3 +1,10 @@
+## [0.5.5](https://github.com/coingaming/grpc/compare/v0.5.4...v0.5.5) (2022-03-06)
+
+
+### Bug Fixes
+
+* ex_doc in test ([62bc734](https://github.com/coingaming/grpc/commit/62bc73437f5009610d8999067c2876e148eccd8a))
+
 ## [0.5.4](https://github.com/coingaming/grpc/compare/v0.5.3...v0.5.4) (2022-03-06)
 
 
