@@ -57,7 +57,7 @@ defmodule GRPC.Mixfile do
       name: :grpc,
       organization: "coingaming",
       licenses: ["Apache 2"],
-      links: %{"GitHub" => "https://github.com/surgeventures/grpc"},
+      links: %{"GitHub" => "https://github.com/coingaming/grpc/tree/v#{@version}"},
       files: ~w(mix.exs README.md lib src config LICENSE .formatter.exs VERSION)
     }
   end
