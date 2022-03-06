@@ -1,10 +1,15 @@
 defmodule GRPC.Mixfile do
   use Mix.Project
 
+  @version (case File.read("VERSION") do
+    {:ok, version} -> String.trim(version)
+    {:error, _} -> "0.0.0-development"
+  end)
+
   def project do
     [
       app: :grpc,
-      version: version(),
+      version: @version,
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env()),
       build_embedded: Mix.env() == :prod,
@@ -15,8 +20,8 @@ defmodule GRPC.Mixfile do
       docs: [
         extras: ["README.md"],
         main: "readme",
-        source_ref: "v0.6.0",
-        source_url: "https://github.com/surgeventures/grpc"
+        source_ref: "v#{@version}",
+        source_url: "https://github.com/coingaming/grpc"
       ],
       dialyzer: [
         plt_add_apps: [:mix, :iex]
@@ -30,13 +35,6 @@ defmodule GRPC.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     [extra_applications: [:logger]]
-  end
-
-  defp version do
-    case File.read("VERSION") do
-      {:ok, v} -> String.trim(v)
-      {:error, _} -> "0.0.0-development"
-    end
   end
 
   defp deps do
