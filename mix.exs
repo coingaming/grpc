@@ -39,7 +39,7 @@ defmodule GRPC.Mixfile do
 
   defp deps do
     [
-      {:protobuf, "~> 0.9"},
+      {:protobuf, "~> 0.9", organization: "coingaming"},
       {:cowboy, "~> 2.7"},
       {:gun, "~> 2.0-rc"},
       # 2.9.0 fixes some important bugs, so it's better to use ~> 2.9.0
