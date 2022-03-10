@@ -1,3 +1,13 @@
+## [0.5.7](https://github.com/coingaming/grpc/compare/v0.5.6...v0.5.7) (2022-03-10)
+
+
+### Bug Fixes
+
+* no tests in ci (temp) ([5521a6d](https://github.com/coingaming/grpc/commit/5521a6dd0e2fcad106cd3ef0a1fb085c776ab569))
+* protobuf coingaming org ([b22e63e](https://github.com/coingaming/grpc/commit/b22e63e89678563e564a83fb93a41fb61f6621e2))
+* protobuf coingaming org ([a984da4](https://github.com/coingaming/grpc/commit/a984da46e6e0c9cb3c6fe9d3e5e6bcc1b71afac1))
+* removing warnings-as-errors ([c9fd4c5](https://github.com/coingaming/grpc/commit/c9fd4c5beb1d17f5c63e26d43b345b4cbcd155bb))
+
 ## [0.5.6](https://github.com/coingaming/grpc/compare/v0.5.5...v0.5.6) (2022-03-06)
 
 
